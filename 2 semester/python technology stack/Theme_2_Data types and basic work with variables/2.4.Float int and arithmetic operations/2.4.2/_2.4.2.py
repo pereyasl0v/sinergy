@@ -1,0 +1,16 @@
+print("Enter units")
+a = input()
+print("Enter ten")
+b = input()
+print("Enter hundreds")
+c = input()
+print("Enter thousands")
+d = input()
+print("Enter ten-thousandths")
+e = input()
+
+f=(a+b+c+d+e)
+print(int(f))
+
+j=float(((float(b)**float(a))*float(c))/(float(e)-float(d)))
+print(j)
