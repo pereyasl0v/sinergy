@@ -1,1 +1,0 @@
-gcc -o thread -std=c99 -lpthread thread.c
