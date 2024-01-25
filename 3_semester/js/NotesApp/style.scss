@@ -1,0 +1,131 @@
+/*Обнуление*/
+*{
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+*,*:before,*:after{
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+
+nav,footer,header,aside{display: block;}
+
+html,body{
+	height: 100%;
+	width: 100%;
+	font-size: 100%;
+	line-height: 1;
+	font-size: 14px;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+input,button,textarea{font-family:inherit;}
+
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner {padding:0;border:0;}
+a, a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul,li{list-style: none;}
+img{vertical-align: top;}
+
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
+
+body{
+    font-family: montserrat;
+    background-color: rgb(255, 250, 200);
+    display: flex;
+    .wrapper{
+        padding: 25px;
+        height: 100%;
+        width:100%;
+        display: flex;
+        flex-direction: column;
+        .header{
+            width:100%;
+            display: flex;
+            .content{
+                width:100%;
+                display: flex;
+                justify-content: center;
+                .p{
+                    font-weight: 200;
+                    font-size: 40px;
+                    min-width: 500px;
+                    text-align: center;
+                    border-bottom: 3px solid green;
+                    
+                }
+                p:last-child{
+                    font-size: 14px;
+                    font-weight: normal;
+                }
+            }
+        }
+        .main{
+            height: 100%;
+            width: 100%;
+            .content{
+                margin: 0 auto;
+                padding-bottom: 25px;
+                min-height:  auto;
+                width: 750px;
+                margin-top: 50px;
+                border-bottom: 3px solid rgb(255, 129, 129);
+                .task-list{
+                    .print-hello{
+                        text-align: center;
+                    }
+                    min-width: 100%;
+                    .task{
+                        max-width: 100%;
+                      
+                        .task-add-content{
+                            background-color: rgb(255, 250, 200);
+                            width: 100%;
+                            border-bottom: 1px solid rgb(0, 255, 242);
+                            font-size: 16px;
+                        }
+                        .task-content{
+                            font-size: 16px;
+                            max-width: 500px;
+                            overflow: hidden;
+                        }
+                        .task-del{
+                            font-weight: bold;
+                            font-size: 20px;
+                            text-align: right;
+                            width: 30px;
+                        }
+              
+                    }
+                }
+                .task-add{
+                    width: 100%;
+                    display: flex;
+                    justify-content: space-around;
+                    margin-top: 50px;
+                    .task-add-content{
+                        width: 85%;
+                        text-align: center;
+                        border: 1px solid grey;
+                        border-radius: 5px;
+
+                    }
+                    .task-add-button{
+                        border: 1px solid rgb(145, 145, 145);
+                        width: 100px;
+                        height: 25px;
+                        font-size: 14px;
+                        border-radius: 10px;
+                    }
+                }
+            }
+        }
+    }
+}
